@@ -1,5 +1,5 @@
-import React from 'react';
 import Head from 'next/head';
+import Header from './Header';
 
 function Layout({ children, title }) {
 	return (
@@ -23,7 +23,7 @@ function Layout({ children, title }) {
 					/>
 				</Head>
 
-				{/* <Header /> */}
+				<Header />
 
 				<main className='container mx-auto max-w-full pt-4 min-h-screen'>
 					{children}
