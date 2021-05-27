@@ -4,7 +4,7 @@ import Head from 'next/head';
 function Layout({ children, title }) {
 	return (
 		<>
-			<div>
+			<div className='bg-gray-800'>
 				<Head>
 					<meta
 						name='viewport'
@@ -16,13 +16,6 @@ function Layout({ children, title }) {
 						name='description'
 						content='PlayGratis is the ultimate directory for finding free-to-play PC or Browser games.'
 					/>
-					<link
-						rel='stylesheet'
-						href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'
-						integrity='sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=='
-						crossorigin='anonymous'
-						referrerpolicy='no-referrer'
-					/>
 					<link rel='preconnect' href='https://fonts.gstatic.com' />
 					<link
 						href='https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Odibee+Sans&display=swap'
@@ -32,7 +25,11 @@ function Layout({ children, title }) {
 
 				{/* <Header /> */}
 
-				<main>{children}</main>
+				<main className='container mx-auto max-w-full pt-4 min-h-screen'>
+					{children}
+				</main>
+
+				{/* <Footer /> */}
 			</div>
 		</>
 	);

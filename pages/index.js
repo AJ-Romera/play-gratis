@@ -1,10 +1,10 @@
-import Layout from '../components/Layout';
+import Layout from '../components/layout/Layout';
 
 export default function Home() {
 	return (
 		<div>
 			<Layout title='PlayGratis F2P Games'>
-				<p>Desde Layout</p>
+				<p className='bg-blue-700 font-extrabold'>Desde Layout</p>
 			</Layout>
 		</div>
 	);
