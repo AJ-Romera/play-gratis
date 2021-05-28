@@ -1,6 +1,6 @@
 function Search() {
 	return (
-		<div className='w-96 h-12 bg-gray-100 rounded-xl flex items-center p-5'>
+		<div className='w-96 h-10 bg-gray-100 rounded-xl flex items-center p-5'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				className='h-6 w-5 text-gray-500'
