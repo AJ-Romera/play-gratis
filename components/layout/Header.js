@@ -2,15 +2,6 @@ import Link from 'next/link';
 import Menu from './Menu';
 import Search from './Search';
 
-/* const Logo = styled.a`
-    color: var(--naranja);
-    font-size: 4rem;
-    line-height: 0;
-    font-weight: 700;
-    font-family: 'Roboto Slab', serif;
-    margin-right: 2rem;
-`; */
-
 function Header() {
 	return (
 		<header>
