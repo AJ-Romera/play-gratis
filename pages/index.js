@@ -1,4 +1,5 @@
 import Layout from '../components/layout/Layout';
+import Image from 'next/image';
 
 function Home() {
 	return (
@@ -15,9 +16,12 @@ function Home() {
 								Button here
 							</p>
 						</div>
-						<p className='text-xl font-normal text-gray-200 bg-blue-700'>
-							IMAGE HERE
-						</p>
+						<Image
+							src='/static/images/pexels-rodnae-productions-7915289.jpg'
+							alt='Gamer girl playing by RODNAE Productions in Pexels'
+							width={500}
+							height={400}
+						/>
 					</div>
 				</div>
 			</Layout>
