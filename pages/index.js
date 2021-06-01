@@ -1,5 +1,6 @@
-import Layout from '../components/layout/Layout';
 import Image from 'next/image';
+import Layout from '../components/layout/Layout';
+import Button from '../components/ui/Button';
 
 function Home() {
 	return (
@@ -12,9 +13,7 @@ function Home() {
 								You can buy expensive games or you can find
 								amazing free-to-play games
 							</p>
-							<p className='text-3xl font-normal text-gray-200'>
-								Button here
-							</p>
+							<Button />
 						</div>
 						<Image
 							src='/static/images/pexels-rodnae-productions-7915289.jpg'
