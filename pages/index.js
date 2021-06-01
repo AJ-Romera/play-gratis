@@ -13,7 +13,7 @@ function Home() {
 								You can buy expensive games or you can find
 								amazing free-to-play games
 							</p>
-							<Button />
+							<Button btnMessage='Explore Now' />
 						</div>
 						<Image
 							src='/static/images/pexels-rodnae-productions-7915289.jpg'
