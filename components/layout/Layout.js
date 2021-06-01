@@ -5,7 +5,7 @@ import Footer from './Footer';
 function Layout({ children, title }) {
 	return (
 		<>
-			<div className='bg-gray-800'>
+			<div className='bg-gray-900'>
 				<Head>
 					<meta
 						name='viewport'
