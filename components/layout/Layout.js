@@ -26,7 +26,7 @@ function Layout({ children, title }) {
 
 				<Header />
 
-				<main className='container mx-auto flex max-w-full min-h-screen'>
+				<main className='container mx-auto max-w-full min-h-screen'>
 					{children}
 				</main>
 

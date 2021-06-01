@@ -6,7 +6,7 @@ function Home() {
 	return (
 		<div>
 			<Layout title='PlayGratis F2P Games'>
-				<div className='flex flex-row items-center justify-center flex-1 mx-auto max-w-5xl text-center'>
+				<div className='flex flex-row items-center justify-center flex-1 mx-auto max-w-5xl min-h-screen text-center'>
 					<div className='grid grid-cols-2 gap-4'>
 						<div>
 							<p className='text-5xl font-bold text-gray-200'>
