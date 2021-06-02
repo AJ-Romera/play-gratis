@@ -1,33 +1,29 @@
 import Image from 'next/image';
 import Layout from '../components/layout/Layout';
+import Card from '../components/ui/Card';
 
 function Explore({ games }) {
+	{
+		console.log(games);
+	}
 	return (
 		<div>
 			<Layout title='Explore F2P Games'>
-				<h1 className='text-5xl font-bold text-gray-200'>
-					List of Games:
-				</h1>
-				{console.log(games)}
-				<ul className='text-3xl font-semibold text-gray-200'>
+				<div className='px-5 my-10 gap-4 sm:grid md:grid-cols-2 xl:grid-cols-3 3xl:flex flex-wrap justify-center'>
 					{games.map((game) => (
-						<li key={game.id}>
-							<Image
-								src={game.thumbnail}
-								alt='sdgsdfgdsfg'
-								width={450}
-								height={300}
-							/>
-							<h2>{game.title}</h2>
-						</li>
+						<Card
+							className='min-h-full'
+							key={game.id}
+							game={game}
+						/>
 					))}
-				</ul>
+				</div>
 			</Layout>
 		</div>
 	);
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
 	const res = await fetch(`https://www.freetogame.com/api/games`);
 	const data = await res.json();
 
@@ -38,7 +34,7 @@ export async function getStaticProps(context) {
 	}
 
 	return {
-		props: { games: data }, // will be passed to the page component as props
+		props: { games: data },
 	};
 }
 
