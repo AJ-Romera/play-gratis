@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Layout from '../components/layout/Layout';
 import Card from '../components/ui/Card';
 
@@ -9,13 +8,9 @@ function Explore({ games }) {
 	return (
 		<div>
 			<Layout title='Explore F2P Games'>
-				<div className='px-5 my-10 gap-4 sm:grid md:grid-cols-2 xl:grid-cols-3 3xl:flex flex-wrap justify-center'>
+				<div className='px-5 my-10 gap-4 h-3/5 sm:grid md:grid-cols-2 xl:grid-cols-4 3xl:flex flex-wrap justify-center'>
 					{games.map((game) => (
-						<Card
-							className='min-h-full'
-							key={game.id}
-							game={game}
-						/>
+						<Card key={game.id} game={game} />
 					))}
 				</div>
 			</Layout>
