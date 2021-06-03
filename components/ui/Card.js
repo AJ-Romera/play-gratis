@@ -12,10 +12,9 @@ function Card({ game }) {
 				height={400}
 			/>
 			<div className='h-3/4 p-6 text-gray-200 bg-gray-800 hover:bg-gray-900 hover:text-gray-100 transition duration-300 ease-in'>
-				<h2 className='text-base font-medium text-indigo-300 mb-1'>
-					{game.developer}
-				</h2>
-				<h1 className='text-2xl font-semibold mb-3'>{game.title}</h1>
+				<h1 className='text-3xl font-semibold mb-3 text-indigo-100'>
+					{game.title}
+				</h1>
 				<p className='leading-relaxed mb-3'>{game.short_description}</p>
 				<div className='flex items-center flex-wrap '>
 					<a className='text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0'>

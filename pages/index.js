@@ -9,7 +9,7 @@ function Home() {
 				<div className='flex flex-row items-center justify-center flex-1 mx-auto max-w-5xl min-h-screen text-center'>
 					<div className='grid grid-cols-2 gap-4'>
 						<div>
-							<p className='text-5xl font-bold text-gray-200'>
+							<p className='text-5xl font-bold text-gray-200 mb-10'>
 								You can buy expensive games or you can find
 								amazing free-to-play games
 							</p>
