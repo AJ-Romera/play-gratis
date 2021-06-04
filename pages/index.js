@@ -1,6 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Layout from '../components/layout/Layout';
-import Button from '../components/ui/Button';
 
 function Home() {
 	return (
@@ -14,7 +14,11 @@ function Home() {
 									You can buy expensive games or you can find
 									amazing free-to-play games
 								</p>
-								<Button btnMessage='Explore Now' />
+								<Link href='/explore'>
+									<a className='border-2 border-indigo-500 rounded-lg font-bold text-blue-500 px-4 py-3 transition duration-300 ease-in-out hover:bg-indigo-500 hover:text-white mr-6'>
+										Explore Now
+									</a>
+								</Link>
 							</div>
 							<Image
 								src='/static/images/pexels-rodnae-productions-7915289.jpg'
