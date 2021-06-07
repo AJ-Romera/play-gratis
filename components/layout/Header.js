@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Menu from './Menu';
-import Search from './Search';
+import Search from '../ui/Search';
 
 function Header() {
 	return (

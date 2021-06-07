@@ -1,6 +1,26 @@
+import React, { useState } from 'react';
+import Router from 'next/router';
+
 function Search() {
+	const [wordsToSearch, setWordsToSearch] = useState('');
+
+	const searchGame = (e) => {
+		e.preventDefault();
+
+		if (wordsToSearch.trim() === '') return;
+
+		// redirect to /search
+		Router.push({
+			pathname: '/search',
+			query: { q: wordsToSearch },
+		});
+	};
+
 	return (
-		<div className='w-96 h-10 bg-gray-100 rounded-xl flex items-center p-5'>
+		<form
+			className='w-96 h-10 bg-gray-100 rounded-xl flex items-center p-5'
+			onSubmit={searchGame}
+		>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				className='h-6 w-5 text-gray-500'
@@ -19,8 +39,9 @@ function Search() {
 				className='flex-1 h-10 bg-gray-100 border-none outline-none text-lg pl-3'
 				type='text'
 				placeholder='Search a Game'
+				onChange={(e) => setWordsToSearch(e.target.value)}
 			/>
-		</div>
+		</form>
 	);
 }
 
