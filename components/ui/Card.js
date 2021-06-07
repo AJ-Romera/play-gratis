@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Card({ game }) {
 	return (
-		<div className='h-full mb-3 border-2 border-solid border-gray-600 rounded-lg overflow-hidden bg-gray-800 hover:bg-gray-900 hover:text-gray-100 transition duration-300 ease-in'>
+		<div className='h-full mb-3 border-2 border-solid border-gray-600 rounded-lg overflow-hidden bg-gray-800 hover:bg-gray-900 hover:text-gray-100 hover:border-indigo-500 transition duration-300 ease-in'>
 			<Image
 				className='lg:h-72 md:h-48 w-full object-cover object-center'
 				layout='responsive'
