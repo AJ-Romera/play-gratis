@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Layout from '../components/layout/Layout';
 import Card from '../components/ui/Card';
 
-function Explore({ games }) {
+function Search({ games }) {
 	const router = useRouter();
 	const {
 		query: { q },
@@ -53,4 +53,4 @@ export async function getStaticProps() {
 	};
 }
 
-export default Explore;
+export default Search;
