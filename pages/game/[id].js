@@ -2,6 +2,7 @@ import GameDetails from '../../components/layout/GameDetails';
 
 function Game({ game }) {
 	console.log(game);
+
 	return <GameDetails game={game} />;
 }
 
