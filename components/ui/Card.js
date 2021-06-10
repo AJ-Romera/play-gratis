@@ -13,11 +13,11 @@ function Card({ game }) {
 					width={700}
 					height={400}
 				/>
-				<div className='p-6 text-gray-200'>
+				<div className='p-6'>
 					<h1 className='text-3xl font-semibold mb-3 text-indigo-100'>
 						{game.title}
 					</h1>
-					<p className='leading-relaxed mb-8'>
+					<p className='text-gray-200 leading-relaxed mb-8'>
 						{game.short_description}
 					</p>
 					<div className='flex items-center flex-wrap justify-between'>

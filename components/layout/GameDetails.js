@@ -34,13 +34,93 @@ function GameDetails({ game }) {
 					</Link>
 				</div>
 			</aside>
-			<div className='bg-gray-900 col-span-3 border-2 border-gray-200'>
-				<p>TITLE</p>
-				<p>ABOUT - DESCRIPTION + READ MORE</p>
-				<p>ADITIONAL INFORMATION</p>
-				<p>SCREENSHOTS</p>
-				<p>TITLE</p>
-			</div>
+			<section className='col-span-3 border-2 border-gray-200'>
+				<p className='font-normal text-justify text-lg text-gray-200'>
+					{game.title}
+				</p>
+				<p className='font-normal text-justify text-lg text-gray-200'>
+					About {game.title}
+				</p>
+				<p className='font-normal text-justify text-lg text-gray-200'>
+					{game.description}
+				</p>
+				<p className='font-normal text-justify text-lg text-gray-200'>
+					Aditional Information
+				</p>
+				<p className='font-normal text-justify text-lg text-gray-200'>
+					{/* i info icon HERE */} Please note this free-to-play game
+					may or may not offer optional in-game purchases.
+				</p>
+				<div className='grid grid-cols-2 gap-4'>
+					<div className='flex flex-col bg-white'>
+						<span>Title</span>
+						<span>{game.title}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Release Date</span>
+						<span>{game.release_date}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Developer</span>
+						<span>{game.developer}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Publisher</span>
+						<span>{game.publisher}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Genre</span>
+						<span>{game.genre}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Platform</span>
+						<span>
+							{/* ICONO DE WINDOWS AQUÍ */}
+							{game.platform} (Client)
+						</span>
+					</div>
+				</div>
+				<p className='font-normal text-justify text-lg text-gray-200'>
+					{game.title} Screenshots
+				</p>
+				{/* HERE THE SCREENSHOTS */}
+				<h3 className='font-normal text-justify text-lg text-gray-200'>
+					Minimum System Requirements <span>(Windows)</span>
+				</h3>
+				<div className='grid grid-cols-2 gap-4'>
+					<div className='flex flex-col bg-white'>
+						<span>OS</span>
+						<span>{game.minimum_system_requirements.os}</span>
+					</div>
+					{/* C O N T I N U A  P O R  A Q U Í */}
+					<div className='flex flex-col bg-white'>
+						<span>Title</span>
+						<span>{game.title}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Title</span>
+						<span>{game.title}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Title</span>
+						<span>{game.title}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Title</span>
+						<span>{game.title}</span>
+					</div>
+					<div className='flex flex-col bg-white'>
+						<span>Title</span>
+						<span>{game.title}</span>
+					</div>
+				</div>
+				<p className='font-normal text-justify text-lg text-gray-200'>
+					All material on this page is copyrighted by{' '}
+					<span>©{game.publisher}</span> and their respective
+					licensors. All other trademarks are the property of their
+					respective owners.
+				</p>
+			</section>
 		</div>
 	);
 }
