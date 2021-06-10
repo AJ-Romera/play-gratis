@@ -24,7 +24,7 @@ function Card({ game }) {
 						<a
 							target='_blank'
 							href={game.game_url}
-							className='text-indigo-300 font-medium uppercase inline-flex items-center md:mb-2 lg:mb-0 p-1.5 mr-6 border-2 border-solid border-indigo-500 transition duration-300 ease-in-out hover:bg-indigo-500 hover:text-white rounded-lg cursor-pointer'
+							className='text-indigo-300 font-normal uppercase inline-flex items-center md:mb-2 lg:mb-0 p-1.5 mr-6 border-2 border-solid border-indigo-500 transition duration-300 ease-in-out hover:bg-indigo-500 hover:text-white rounded-lg cursor-pointer'
 						>
 							Play now
 							<svg
