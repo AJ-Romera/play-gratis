@@ -1,7 +1,22 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 function GameDetails({ game }) {
+	const [read, setRead] = useState('+ Read More');
+
+	let descriptionArray = game.description.split('\r\n');
+
+	function toggleDescription() {
+		if (description.classList.contains('line-clamp-4')) {
+			description.classList.replace('line-clamp-4', 'line-clamp-none');
+			setRead('- Read Less');
+		} else {
+			description.classList.replace('line-clamp-none', 'line-clamp-4');
+			setRead('+ Read More');
+		}
+	}
+
 	return (
 		<div className='grid grid-cols-4 gap-5'>
 			<aside className='col-span-1'>
@@ -41,9 +56,26 @@ function GameDetails({ game }) {
 				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-6 mb-2'>
 					About {game.title}
 				</h3>
-				<p className='font-normal text-justify text-lg text-gray-200'>
-					{game.description}
-				</p>
+				<div>
+					<div
+						id='description'
+						className='font-normal text-base text-gray-200 mt-0 mb-4 line-clamp-4'
+					>
+						{descriptionArray.map((paragraph) => (
+							<p key={game.id.toString() + '-' + Math.random()}>
+								{paragraph}
+								<br></br>
+							</p>
+						))}
+					</div>
+					<a
+						onClick={(e) => toggleDescription()}
+						className='font-normal text-base text-gray-50 cursor-pointer'
+					>
+						{read}
+					</a>
+				</div>
+
 				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12 mb-2'>
 					Aditional Information
 				</h3>
