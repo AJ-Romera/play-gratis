@@ -35,9 +35,9 @@ function GameDetails({ game }) {
 				</div>
 			</aside>
 			<section className='col-span-3 border-2 border-gray-200'>
-				<p className='font-normal text-justify text-lg text-gray-200'>
+				<h1 className='font-normal text-justify text-lg text-gray-200'>
 					{game.title}
-				</p>
+				</h1>
 				<p className='font-normal text-justify text-lg text-gray-200'>
 					About {game.title}
 				</p>
@@ -92,26 +92,29 @@ function GameDetails({ game }) {
 						<span>OS</span>
 						<span>{game.minimum_system_requirements.os}</span>
 					</div>
-					{/* C O N T I N U A  P O R  A Q U Í */}
 					<div className='flex flex-col bg-white'>
-						<span>Title</span>
-						<span>{game.title}</span>
+						<span>Processor</span>
+						<span>
+							{game.minimum_system_requirements.processor}
+						</span>
 					</div>
 					<div className='flex flex-col bg-white'>
-						<span>Title</span>
-						<span>{game.title}</span>
+						<span>Memory</span>
+						<span>{game.minimum_system_requirements.memory}</span>
 					</div>
 					<div className='flex flex-col bg-white'>
-						<span>Title</span>
-						<span>{game.title}</span>
+						<span>Graphics</span>
+						<span>{game.minimum_system_requirements.graphics}</span>
 					</div>
 					<div className='flex flex-col bg-white'>
-						<span>Title</span>
-						<span>{game.title}</span>
+						<span>Storage</span>
+						<span>{game.minimum_system_requirements.storage}</span>
 					</div>
 					<div className='flex flex-col bg-white'>
-						<span>Title</span>
-						<span>{game.title}</span>
+						<span>Additional Notes</span>
+						<span>
+							Specifications may change during development
+						</span>
 					</div>
 				</div>
 				<p className='font-normal text-justify text-lg text-gray-200'>

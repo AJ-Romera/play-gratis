@@ -24,7 +24,7 @@ function Search({ games }) {
 	}, [q, games]);
 
 	return (
-		<div className='px-5 my-10 gap-4 sm:grid md:grid-cols-2 xl:grid-cols-4 3xl:flex flex-wrap justify-center'>
+		<div className='my-10 sm:grid gap-4 md:grid-cols-2 xl:grid-cols-4 3xl:flex flex-wrap justify-center'>
 			{result.map((game) => (
 				<Card key={game.id} game={game} />
 			))}
