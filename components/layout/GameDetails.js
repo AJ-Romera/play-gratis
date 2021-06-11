@@ -79,7 +79,7 @@ function GameDetails({ game }) {
 				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12 mb-2'>
 					Aditional Information
 				</h3>
-				<p className='flex flex-row font-normal text-justify text-lg text-gray-200'>
+				<p className='flex flex-row items-center font-normal text-justify text-lg text-gray-200'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='h-5 w-5'
@@ -120,7 +120,7 @@ function GameDetails({ game }) {
 					</div>
 					<div className='flex flex-col bg-white'>
 						<span>Platform</span>
-						<span className='flex flex-row'>
+						<span className='flex flex-row items-center'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								className='h-5 w-5'
