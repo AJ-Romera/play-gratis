@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function GameDetails({ game }) {
 	return (
-		<div className='grid grid-cols-4 gap-4'>
+		<div className='grid grid-cols-4 gap-5'>
 			<aside className='col-span-1'>
 				<div className='flex flex-col'>
 					<Image
@@ -34,19 +34,19 @@ function GameDetails({ game }) {
 					</Link>
 				</div>
 			</aside>
-			<section className='col-span-3 border-2 border-gray-200'>
-				<h1 className='font-normal text-justify text-lg text-gray-200'>
+			<section className='col-span-3'>
+				<h1 className='font-medium text-4xl text-justify text-indigo-100 mb-2'>
 					{game.title}
 				</h1>
-				<p className='font-normal text-justify text-lg text-gray-200'>
+				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-6 mb-2'>
 					About {game.title}
-				</p>
+				</h3>
 				<p className='font-normal text-justify text-lg text-gray-200'>
 					{game.description}
 				</p>
-				<p className='font-normal text-justify text-lg text-gray-200'>
+				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12 mb-2'>
 					Aditional Information
-				</p>
+				</h3>
 				<p className='flex flex-row font-normal text-justify text-lg text-gray-200'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
@@ -109,15 +109,18 @@ function GameDetails({ game }) {
 						</span>
 					</div>
 				</div>
-				<p className='font-normal text-justify text-lg text-gray-200'>
+				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12'>
 					{game.title} Screenshots
-				</p>
+				</h3>
 				{/* HERE THE SCREENSHOTS */}
-				<h3 className='font-normal text-justify text-lg text-gray-200'>
-					Minimum System Requirements <span>(Windows)</span>
+				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12'>
+					Minimum System Requirements{' '}
+					<span className='font-normal text-xl text-gray-400'>
+						(Windows)
+					</span>
 				</h3>
 				<div className='grid grid-cols-2 gap-4'>
-					<div className='flex flex-col bg-white'>
+					<div className='flex flex-col bg-white p-1'>
 						<span>OS</span>
 						<span>{game.minimum_system_requirements.os}</span>
 					</div>
