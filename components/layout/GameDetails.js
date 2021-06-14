@@ -56,6 +56,7 @@ function GameDetails({ game }) {
 				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-6 mb-2'>
 					About {game.title}
 				</h3>
+				<hr className='mt-2 mb-3 border-t-1 border-solid border-gray-600' />
 				<div>
 					<div
 						id='description'
@@ -76,10 +77,10 @@ function GameDetails({ game }) {
 					</a>
 				</div>
 
-				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12 mb-2'>
+				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12'>
 					Aditional Information
 				</h3>
-				<p className='flex flex-row items-center font-normal text-justify text-lg text-gray-200'>
+				<p className='flex flex-row items-center font-normal text-justify text-base text-gray-400 mb-2'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='h-5 w-5'
@@ -97,30 +98,53 @@ function GameDetails({ game }) {
 						optional in-game purchases.
 					</span>
 				</p>
+				<hr className='mb-3 border-t-1 border-solid border-gray-600' />
 				<div className='grid grid-cols-2 gap-4'>
-					<div className='flex flex-col bg-white'>
-						<span>Title</span>
-						<span>{game.title}</span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Title
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.title}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Release Date</span>
-						<span>{game.release_date}</span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Release Date
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.release_date}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Developer</span>
-						<span>{game.developer}</span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Developer
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.developer}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Publisher</span>
-						<span>{game.publisher}</span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Publisher
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.publisher}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Genre</span>
-						<span>{game.genre}</span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Genre
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.genre}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Platform</span>
-						<span className='flex flex-row items-center'>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Platform
+						</span>
+						<span className='flex flex-row items-center font-normal text-justify text-base text-gray-200'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								className='h-5 w-5'
@@ -144,44 +168,68 @@ function GameDetails({ game }) {
 				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12'>
 					{game.title} Screenshots
 				</h3>
+
 				{/* HERE THE SCREENSHOTS */}
-				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12'>
+
+				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12 mb-2'>
 					Minimum System Requirements{' '}
 					<span className='font-normal text-xl text-gray-400'>
 						(Windows)
 					</span>
 				</h3>
-				<div className='grid grid-cols-2 gap-4'>
-					<div className='flex flex-col bg-white p-1'>
-						<span>OS</span>
-						<span>{game.minimum_system_requirements.os}</span>
+				<hr className='mb-3 border-t-1 border-solid border-gray-600' />
+				<div className='grid grid-cols-2 gap-4 mb-8'>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							OS
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.minimum_system_requirements.os}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Processor</span>
-						<span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Processor
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
 							{game.minimum_system_requirements.processor}
 						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Memory</span>
-						<span>{game.minimum_system_requirements.memory}</span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Memory
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.minimum_system_requirements.memory}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Graphics</span>
-						<span>{game.minimum_system_requirements.graphics}</span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Graphics
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.minimum_system_requirements.graphics}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Storage</span>
-						<span>{game.minimum_system_requirements.storage}</span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Storage
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
+							{game.minimum_system_requirements.storage}
+						</span>
 					</div>
-					<div className='flex flex-col bg-white'>
-						<span>Additional Notes</span>
-						<span>
+					<div className='flex flex-col'>
+						<span className='font-normal text-justify text-base text-gray-400'>
+							Additional Notes
+						</span>
+						<span className='font-normal text-justify text-base text-gray-200'>
 							Specifications may change during development
 						</span>
 					</div>
 				</div>
-				<p className='font-normal text-justify text-lg text-gray-200'>
+				<hr className='mb-3 border-t-1 border-solid border-gray-600' />
+				<p className='font-normal text-justify text-sm text-gray-400'>
 					All material on this page is copyrighted by{' '}
 					<span>©{game.publisher}</span> and their respective
 					licensors. All other trademarks are the property of their
