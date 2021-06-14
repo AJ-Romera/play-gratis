@@ -20,7 +20,7 @@ function GameDetails({ game }) {
 	return (
 		<div className='grid grid-cols-4 gap-5'>
 			<aside className='col-span-1'>
-				<div className='flex flex-col'>
+				<div className='sticky top-10'>
 					<Image
 						className='h-auto w-full object-cover object-center'
 						layout='responsive'
@@ -76,7 +76,6 @@ function GameDetails({ game }) {
 						{read}
 					</a>
 				</div>
-
 				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12'>
 					Aditional Information
 				</h3>
