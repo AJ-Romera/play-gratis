@@ -21,7 +21,7 @@ function GameDetails({ game }) {
 			<aside className='col-span-1'>
 				<div className='sticky top-10'>
 					<Image
-						className='h-auto w-full object-cover object-center'
+						className='h-auto w-full object-cover object-center rounded-lg'
 						layout='responsive'
 						src={game.thumbnail}
 						alt={game.title}
@@ -168,8 +168,23 @@ function GameDetails({ game }) {
 				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12'>
 					{game.title} Screenshots
 				</h3>
+				<hr className='mt-2 mb-3 border-t-1 border-solid border-gray-600' />
 
 				{/* HERE THE SCREENSHOTS */}
+				<div className='flex'>
+					{game.screenshots.map((shot) => (
+						<div className='p-1'>
+							<Image
+								key={shot.id.toString()}
+								className='h-auto w-full object-cover object-center rounded-lg'
+								src={shot.image}
+								alt={`Screenshot of ${game.title} ${shot.id}`}
+								width={700}
+								height={400}
+							/>
+						</div>
+					))}
+				</div>
 
 				<h3 className='font-medium text-2xl text-justify text-indigo-100 mt-12 mb-2'>
 					Minimum System Requirements{' '}
