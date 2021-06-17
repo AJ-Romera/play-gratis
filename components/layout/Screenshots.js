@@ -7,21 +7,15 @@ function Screenshots({ game }) {
 	function toggleOverlay(e) {
 		if (overlay.classList.contains('hidden')) {
 			overlay.classList.replace('hidden', 'flex');
-			/* console.log(e.target.src); */
 			let dirtySrcUrl = e.target.src;
-			console.log(dirtySrcUrl);
-			let clean1 = dirtySrcUrl.split('&')[0];
-			console.log(clean1);
-			let clean2 = clean1.replaceAll('%2F', '/');
-			console.log(clean2);
-			let clean3 = clean2.replaceAll('%3A', ':');
-			console.log(clean3);
-			let clean4 = clean3.replace(
+			let cleanUrl1 = dirtySrcUrl.split('&')[0];
+			let cleanUrl2 = cleanUrl1.replaceAll('%2F', '/');
+			let cleanUrl3 = cleanUrl2.replaceAll('%3A', ':');
+			let cleanUrl4 = cleanUrl3.replace(
 				'http://localhost:3000/_next/image?url=',
 				''
 			);
-			console.log(clean4);
-			setImageSrc(clean4);
+			setImageSrc(cleanUrl4);
 		} else {
 			overlay.classList.replace('flex', 'hidden');
 		}
