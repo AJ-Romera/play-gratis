@@ -32,7 +32,7 @@ function Screenshots({ game }) {
 					<div key={shot.id.toString()} className='p-1'>
 						<Image
 							id={shot.id}
-							className='h-auto w-full object-cover object-center rounded-lg'
+							className='h-auto w-full object-cover object-center rounded-lg cursor-pointer'
 							src={shot.image}
 							alt={`Screenshot of ${game.title} ${shot.id}`}
 							width={700}
