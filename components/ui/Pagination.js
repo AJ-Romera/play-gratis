@@ -1,4 +1,11 @@
-function Pagination({ gamesPerPage, totalGames, paginate, currentPage }) {
+function Pagination({
+	gamesPerPage,
+	totalGames,
+	paginate,
+	currentPage,
+	indexOfFirstGame,
+	currentGames,
+}) {
 	const pageNumbers = [];
 
 	for (let i = 1; i <= Math.ceil(totalGames / gamesPerPage); i++) {
@@ -45,15 +52,23 @@ function Pagination({ gamesPerPage, totalGames, paginate, currentPage }) {
 					</a>
 				)}
 			</div>
-			{/* Prev and Next "buttons" for bigger screens / desktop */}
 			<div className='hidden sm:flex-1 sm:flex sm:items-center sm:justify-between'>
+				{/* Left Side Pagination Info */}
 				<div>
 					<p className='text-sm text-gray-700'>
-						Showing <span className='font-medium'>1</span> to{' '}
-						<span className='font-medium'>10</span> of{' '}
-						<span className='font-medium'>555</span> results
+						Showing{' '}
+						<span className='font-medium'>
+							{indexOfFirstGame + 1}
+						</span>{' '}
+						to{' '}
+						<span className='font-medium'>
+							{indexOfFirstGame + currentGames.length}
+						</span>{' '}
+						of <span className='font-medium'>{totalGames}</span>{' '}
+						results
 					</p>
 				</div>
+				{/* Prev and Next "buttons" for bigger screens / desktop */}
 				<div>
 					<nav
 						className='relative z-0 inline-flex rounded-md shadow-sm -space-x-px'

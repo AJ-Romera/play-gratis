@@ -3,8 +3,6 @@ import Card from '../components/ui/Card';
 import Pagination from '../components/ui/Pagination';
 
 function Explore({ games }) {
-	/* const [posts, setPosts] = useState([]); */
-	/* const [loading, setLoading] = useState(false); */
 	const [currentPage, setCurrentPage] = useState(1);
 	const [gamesPerPage] = useState(24);
 
@@ -28,6 +26,8 @@ function Explore({ games }) {
 				totalGames={games.length}
 				paginate={paginate}
 				currentPage={currentPage}
+				indexOfFirstGame={indexOfFirstGame}
+				currentGames={currentGames}
 			/>
 		</div>
 	);
