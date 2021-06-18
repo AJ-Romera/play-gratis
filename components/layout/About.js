@@ -34,7 +34,7 @@ function About({ game }) {
 					))}
 				</div>
 				<a
-					onClick={(e) => toggleDescription()}
+					onClick={() => toggleDescription()}
 					className='font-normal text-base text-gray-50 cursor-pointer'
 				>
 					{read}

@@ -6,7 +6,7 @@ function Explore({ games }) {
 	/* const [posts, setPosts] = useState([]); */
 	/* const [loading, setLoading] = useState(false); */
 	const [currentPage, setCurrentPage] = useState(1);
-	const [gamesPerPage] = useState(12);
+	const [gamesPerPage] = useState(24);
 
 	// Get current games
 	const indexOfLastGame = currentPage * gamesPerPage;
