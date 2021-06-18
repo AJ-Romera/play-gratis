@@ -23,11 +23,11 @@ function Explore({ games }) {
 					<Card key={game.id} game={game} />
 				))}
 			</div>
-			{/* <Pagination games={games} /> */}
 			<Pagination
 				gamesPerPage={gamesPerPage}
 				totalGames={games.length}
 				paginate={paginate}
+				currentPage={currentPage}
 			/>
 		</div>
 	);
