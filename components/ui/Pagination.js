@@ -116,6 +116,7 @@ function Pagination({
 								</svg>
 							</a>
 						)}
+						{/* Desktop Pagination */}
 						{currentPage >= 3 && (
 							<a
 								href={'#'}

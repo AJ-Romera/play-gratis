@@ -1,11 +1,34 @@
+import { useState } from 'react';
 import Card from '../components/ui/Card';
+import Pagination from '../components/ui/Pagination';
 
 function Popular({ popularGames }) {
+	const [currentPage, setCurrentPage] = useState(1);
+	const [gamesPerPage] = useState(24);
+
+	// Get current games
+	const indexOfLastGame = currentPage * gamesPerPage;
+	const indexOfFirstGame = indexOfLastGame - gamesPerPage;
+	const currentGames = popularGames.slice(indexOfFirstGame, indexOfLastGame);
+
+	// Change page
+	const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
 	return (
-		<div className='my-10 sm:grid gap-4 md:grid-cols-2 xl:grid-cols-4 3xl:flex flex-wrap justify-center'>
-			{popularGames.map((game) => (
-				<Card key={game.id} game={game} />
-			))}
+		<div>
+			<div className='my-10 sm:grid gap-4 md:grid-cols-2 xl:grid-cols-4 3xl:flex flex-wrap justify-center'>
+				{currentGames.map((game) => (
+					<Card key={game.id} game={game} />
+				))}
+			</div>
+			<Pagination
+				gamesPerPage={gamesPerPage}
+				totalGames={popularGames.length}
+				paginate={paginate}
+				currentPage={currentPage}
+				indexOfFirstGame={indexOfFirstGame}
+				currentGames={currentGames}
+			/>
 		</div>
 	);
 }
