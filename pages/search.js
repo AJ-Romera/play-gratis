@@ -32,6 +32,7 @@ function Search({ games }) {
 			);
 		});
 		setResult(filter);
+		setCurrentPage(1);
 	}, [q, games]);
 
 	return (
