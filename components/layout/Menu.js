@@ -10,7 +10,7 @@ function Menu() {
 				<a
 					className={
 						router.pathname == '/'
-							? 'text-xl font-bold text-gray-50 border-t-2 border-solid border-white pt-1'
+							? 'text-xl font-semibold text-gray-50 border-t border-solid border-indigo-500 pt-1'
 							: 'text-xl font-normal text-gray-200'
 					}
 				>
@@ -21,7 +21,7 @@ function Menu() {
 				<a
 					className={
 						router.pathname == '/explore'
-							? 'text-xl font-semibold text-gray-50 border-t-2 border-solid border-white pt-1 ml-7'
+							? 'text-xl font-semibold text-gray-50 border-t border-solid border-indigo-500 pt-1 ml-7'
 							: 'text-xl font-normal text-gray-200 ml-7'
 					}
 				>
@@ -32,7 +32,7 @@ function Menu() {
 				<a
 					className={
 						router.pathname == '/popular'
-							? 'text-xl font-semibold text-gray-50 border-t-2 border-solid border-white pt-1 ml-7'
+							? 'text-xl font-semibold text-gray-50 border-t border-solid border-indigo-500 pt-1 ml-7'
 							: 'text-xl font-normal text-gray-200 ml-7'
 					}
 				>
@@ -43,7 +43,7 @@ function Menu() {
 				<a
 					className={
 						router.pathname == '/newest'
-							? 'text-xl font-semibold text-gray-50 border-t-2 border-solid border-white pt-1 ml-7 mr-0'
+							? 'text-xl font-semibold text-gray-50 border-t border-solid border-indigo-500 pt-1 ml-7 mr-0'
 							: 'text-xl font-normal text-gray-200 ml-7 mr-0'
 					}
 				>
