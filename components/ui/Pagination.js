@@ -13,7 +13,7 @@ function Pagination({
 	}
 
 	return (
-		<div className='bg-gray-800 px-4 py-3 flex items-center justify-between mb-4 border-t border-gray-200 rounded sm:px-6'>
+		<div className='bg-gray-800 px-4 py-3 flex items-center justify-between mb-4 border-solid border-t-2 border-gray-600 rounded sm:px-6'>
 			{/* Responsive Prev and Next "buttons" for mobile */}
 			<div className='flex-1 flex justify-between sm:hidden'>
 				{currentPage < 2 ? (
@@ -55,16 +55,16 @@ function Pagination({
 			<div className='hidden sm:flex-1 sm:flex sm:items-center sm:justify-between'>
 				{/* Left Side Pagination Info */}
 				<div>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-200 leading-relaxed'>
 						Showing{' '}
-						<span className='font-medium'>
+						<span className='font-bold'>
 							{indexOfFirstGame + 1}
 						</span>{' '}
 						to{' '}
-						<span className='font-medium'>
+						<span className='font-bold'>
 							{indexOfFirstGame + currentGames.length}
 						</span>{' '}
-						of <span className='font-medium'>{totalGames}</span>{' '}
+						of <span className='font-bold'>{totalGames}</span>{' '}
 						results
 					</p>
 				</div>
