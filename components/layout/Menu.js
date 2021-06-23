@@ -5,7 +5,7 @@ function Menu() {
 	const router = useRouter();
 
 	return (
-		<nav className='pl-10'>
+		<nav className='pl-10 hidden lg:block'>
 			<Link href='/'>
 				<a
 					className={
