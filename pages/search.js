@@ -23,6 +23,10 @@ function Search({ games }) {
 	const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 	useEffect(() => {
+		if (!q) {
+			return;
+		}
+
 		const wordsToSearch = q.toLowerCase();
 
 		const filter = games.filter((game) => {

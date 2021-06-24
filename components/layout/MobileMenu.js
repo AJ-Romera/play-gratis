@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Search from '../ui/Search';
 
 function MobileMenu() {
 	const router = useRouter();
 	const [open, setOpen] = useState(false);
 
 	return (
-		<div className='lg:hidden'>
+		<div className='md:hidden'>
 			<button
 				className={
 					open
@@ -35,6 +36,9 @@ function MobileMenu() {
 						: 'hidden'
 				}
 			>
+				<div>
+					<Search open={open} />
+				</div>
 				<Link href='/'>
 					<a
 						className={

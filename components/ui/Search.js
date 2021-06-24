@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Router from 'next/router';
 
-function Search() {
+function Search({ open }) {
 	const [wordsToSearch, setWordsToSearch] = useState('');
 
 	const searchGame = (e) => {
@@ -20,7 +20,11 @@ function Search() {
 
 	return (
 		<form
-			className='w-3/6 h-10 bg-gray-100 rounded-xl items-center p-5 hidden mr-16 md:flex lg:mr-0'
+			className={
+				open
+					? 'h-10 bg-gray-100 rounded-xl items-center p-5 flex'
+					: 'w-3/6 h-10 bg-gray-100 rounded-xl items-center p-5 hidden md:flex md:mr-0'
+			}
 			onSubmit={searchGame}
 		>
 			<svg
