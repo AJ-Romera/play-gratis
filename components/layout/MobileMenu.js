@@ -19,7 +19,7 @@ function MobileMenu() {
 			>
 				{open ? (
 					<svg
-						className='h-8 w-8 hover:bg-indigo-500 hover:bg-opacity-40 hover:p-0.5 hover:rounded'
+						className='h-8 w-8 hover:bg-indigo-500 hover:bg-opacity-70 hover:p-0.5 hover:rounded'
 						viewBox='0 0 24 24'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
@@ -31,7 +31,7 @@ function MobileMenu() {
 					</svg>
 				) : (
 					<svg
-						className='h-8 w-8 hover:bg-indigo-500 hover:bg-opacity-40 hover:p-0.5 hover:rounded'
+						className='h-8 w-8 hover:bg-indigo-500 hover:bg-opacity-70 hover:p-0.5 hover:rounded'
 						viewBox='0 0 24 24'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
