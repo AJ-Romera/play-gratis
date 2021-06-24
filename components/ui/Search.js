@@ -23,8 +23,8 @@ function Search({ open, setOpen }) {
 		<form
 			className={
 				open
-					? 'h-10 bg-gray-100 rounded-xl items-center p-5 flex'
-					: 'w-3/6 h-10 bg-gray-100 rounded-xl items-center p-5 hidden md:flex md:mr-0'
+					? 'h-10 bg-gray-100 rounded-xl items-center p-5 flex md:hidden'
+					: 'w-3/6 h-10 bg-gray-100 rounded-xl items-center p-5 hidden mr-16 md:flex lg:mr-0'
 			}
 			onSubmit={searchGame}
 		>
