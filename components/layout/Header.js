@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Menu from './Menu';
+import MobileMenu from './MobileMenu';
 import Search from '../ui/Search';
 
 function Header() {
@@ -17,8 +18,8 @@ function Header() {
 					</Link>
 					<Menu />
 				</div>
-
 				<Search />
+				<MobileMenu />
 			</div>
 		</header>
 	);
