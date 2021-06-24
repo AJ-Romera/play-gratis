@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Router from 'next/router';
 
-function Search({ open }) {
+function Search({ open, setOpen }) {
 	const [wordsToSearch, setWordsToSearch] = useState('');
 
 	const searchGame = (e) => {
@@ -16,6 +16,7 @@ function Search({ open }) {
 		});
 
 		e.target.reset();
+		setOpen(false);
 	};
 
 	return (
