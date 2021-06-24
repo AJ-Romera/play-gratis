@@ -14,6 +14,8 @@ function Search() {
 			pathname: '/search',
 			query: { q: wordsToSearch },
 		});
+
+		e.target.reset();
 	};
 
 	return (

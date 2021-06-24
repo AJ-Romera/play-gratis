@@ -11,8 +11,8 @@ function MobileMenu() {
 			<button
 				className={
 					open
-						? 'fixed top-5 right-9 z-20'
-						: 'absolute top-5 right-9 z-20'
+						? 'fixed top-5 right-7 z-20'
+						: 'absolute top-5 right-7 z-20'
 				}
 				onClick={() => setOpen(!open)}
 			>
