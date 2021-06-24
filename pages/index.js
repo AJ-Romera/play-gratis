@@ -24,7 +24,7 @@ function Home() {
 								</div>
 							</div>
 						</section>
-						<div className='hidden sm:block'>
+						<div className='hidden sm:flex z-0'>
 							<Image
 								src='https://cdn.pixabay.com/photo/2016/10/30/23/05/controller-1784573_960_720.png'
 								alt='White Game Controller in a Blue Circle'

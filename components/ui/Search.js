@@ -18,7 +18,7 @@ function Search() {
 
 	return (
 		<form
-			className='w-3/6 h-10 bg-gray-100 rounded-xl items-center p-5 hidden md:flex'
+			className='w-3/6 h-10 bg-gray-100 rounded-xl items-center p-5 hidden mr-16 md:flex lg:mr-0'
 			onSubmit={searchGame}
 		>
 			<svg
