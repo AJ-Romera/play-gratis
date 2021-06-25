@@ -3,8 +3,8 @@ import Link from 'next/link';
 function Footer() {
 	return (
 		<footer>
-			<div className='container mx-auto py-4 px-6 max-w-full flex justify-between items-center border-t-2 border-solid border-gray-600 bg-gray-800'>
-				<div className='flex flex-col'>
+			<div className='container mx-auto py-5 px-6 max-w-full flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:justify-between lg:items-center border-t-2 border-solid border-gray-600 bg-gray-800'>
+				<div className='flex flex-col text-center'>
 					<span className='text-sm font-normal italic text-gray-500'>
 						PlayGratis | All rights reserved &copy; 2021
 					</span>
@@ -13,12 +13,12 @@ function Footer() {
 						their respective owners
 					</span>
 				</div>
-				<div className='flex flex-col border-solid border-gray-600'>
-					<span className='flex justify-between items-center text-sm font-normal text-gray-500'>
+				<div className='flex flex-col text-center'>
+					<span className='flex items-center justify-center text-sm font-normal text-gray-500'>
 						Website made with
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='h-4 w-4 ml-2'
+							className='h-4 w-4 ml-1'
 							viewBox='0 0 20 20'
 							fill='crimson'
 						>
@@ -28,11 +28,11 @@ function Footer() {
 								clipRule='evenodd'
 							/>
 						</svg>
-						<span className='ml-2'>by</span>
+						<span className='ml-1'>by</span>
 						<svg
 							width='16px'
 							height='16px'
-							className='w-4 h-4 ml-2'
+							className='w-4 h-4 ml-1'
 							viewBox='0 0 256 250'
 							version='1.1'
 							xmlns='http://www.w3.org/2000/svg'
@@ -44,7 +44,7 @@ function Footer() {
 							></path>
 						</svg>
 						<a
-							className='text-sm font-semibold text-gray-100 ml-2'
+							className='text-sm font-semibold text-gray-100 ml-1'
 							href='https://github.com/AJ-Romera'
 							target='_blank'
 						>
@@ -63,7 +63,7 @@ function Footer() {
 					</span>
 				</div>
 				<Link href='/'>
-					<a className='text-3xl font-semibold italic text-gray-500 mr-8 uppercase'>
+					<a className='text-3xl font-semibold italic text-gray-500 uppercase text-center lg:mr-8'>
 						Play
 						<span className='text-3xl font-thin italic text-gray-600 uppercase'>
 							gratis

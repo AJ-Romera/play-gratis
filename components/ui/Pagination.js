@@ -13,7 +13,7 @@ function Pagination({
 	}
 
 	return (
-		<div className='bg-gray-800 px-4 py-3 flex items-center justify-between mb-4 border-solid border-t-2 border-gray-600 rounded sm:px-6'>
+		<div className='bg-gray-800 px-4 py-3 flex items-center justify-between mb-6 border-solid border-t-2 border-gray-600 rounded sm:px-6'>
 			{/* Responsive Prev and Next "buttons" for mobile */}
 			<div className='flex-1 flex justify-between sm:hidden'>
 				{currentPage < 2 ? (
