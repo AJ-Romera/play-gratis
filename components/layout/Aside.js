@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Aside({ game }) {
 	return (
-		<aside className='col-span-1'>
+		<aside className='col-span-1 mb-12'>
 			<div className='sticky top-10'>
 				<Image
 					className='h-auto w-full object-cover object-center rounded-lg'

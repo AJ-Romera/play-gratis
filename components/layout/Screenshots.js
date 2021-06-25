@@ -27,7 +27,7 @@ function Screenshots({ game }) {
 				{game.title} Screenshots
 			</h3>
 			<hr className='mt-2 mb-3 border-t-1 border-solid border-gray-600' />
-			<div className='flex'>
+			<div className='flex flex-col p-4 md:flex-row md:p-0'>
 				{game.screenshots.map((shot) => (
 					<div key={shot.id.toString()} className='p-1'>
 						<Image
