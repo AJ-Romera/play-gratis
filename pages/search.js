@@ -43,10 +43,12 @@ function Search({ games }) {
 	return (
 		<div>
 			{result.length > 0 ? (
-				<div className='my-10 sm:grid gap-4 md:grid-cols-2 xl:grid-cols-4 3xl:flex flex-wrap justify-center'>
-					{currentGames.map((game) => (
-						<Card key={game.id} game={game} />
-					))}
+				<div>
+					<div className='my-10 sm:grid gap-4 md:grid-cols-2 xl:grid-cols-4 3xl:flex flex-wrap justify-center'>
+						{currentGames.map((game) => (
+							<Card key={game.id} game={game} />
+						))}
+					</div>
 					<Pagination
 						gamesPerPage={gamesPerPage}
 						totalGames={result.length}

@@ -16,7 +16,8 @@ function Search({ open, setOpen }) {
 		});
 
 		e.target.reset();
-		setOpen(false);
+
+		open ? setOpen(false) : null;
 	};
 
 	return (
