@@ -46,7 +46,7 @@ function MobileMenu() {
 			<nav
 				className={
 					open
-						? 'fixed inset-0 sm:left-1/2 bg-gray-900 border-l-2 border-indigo-600 flex flex-col justify-around items-center p-10 z-10'
+						? 'fixed inset-0 sm:left-1/2 bg-gray-900 sm:border-l-2 sm:border-indigo-600 flex flex-col justify-around items-center p-10 z-10'
 						: 'hidden'
 				}
 			>
@@ -57,8 +57,8 @@ function MobileMenu() {
 					<a
 						className={
 							router.pathname == '/'
-								? 'text-xl font-semibold text-gray-50 border-t border-solid border-indigo-500'
-								: 'text-xl font-normal text-gray-200'
+								? 'text-4xl font-bold text-gray-50'
+								: 'text-3xl font-normal text-gray-200'
 						}
 						onClick={() => setOpen(!open)}
 					>
@@ -69,8 +69,8 @@ function MobileMenu() {
 					<a
 						className={
 							router.pathname == '/explore'
-								? 'text-xl font-semibold text-gray-50 border-t border-solid border-indigo-500'
-								: 'text-xl font-normal text-gray-200'
+								? 'text-4xl font-bold text-gray-50'
+								: 'text-3xl font-normal text-gray-200'
 						}
 						onClick={() => setOpen(!open)}
 					>
@@ -81,8 +81,8 @@ function MobileMenu() {
 					<a
 						className={
 							router.pathname == '/popular'
-								? 'text-xl font-semibold text-gray-50 border-t border-solid border-indigo-500'
-								: 'text-xl font-normal text-gray-200'
+								? 'text-4xl font-bold text-gray-50'
+								: 'text-3xl font-normal text-gray-200'
 						}
 						onClick={() => setOpen(!open)}
 					>
@@ -93,8 +93,8 @@ function MobileMenu() {
 					<a
 						className={
 							router.pathname == '/newest'
-								? 'text-xl font-semibold text-gray-50 border-t border-solid border-indigo-500'
-								: 'text-xl font-normal text-gray-200'
+								? 'text-4xl font-bold text-gray-50'
+								: 'text-3xl font-normal text-gray-200'
 						}
 						onClick={() => setOpen(!open)}
 					>

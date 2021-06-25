@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 function Layout({ children, title }) {
 	return (
-		<div className='bg-clouds-patter bg-fixed bg-no-repeat bg-cover'>
+		<div className='bg-clouds-patter bg-fixed bg-no-repeat bg-cover w-full overflow-hidden'>
 			<div className='bg-gray-900 bg-opacity-70'>
 				<Head>
 					<meta
