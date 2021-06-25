@@ -1,10 +1,28 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 
 function Home() {
 	return (
 		<div className='bg-clouds-patter bg-fixed bg-no-repeat bg-cover'>
 			<div className='bg-gray-900 bg-opacity-70'>
+				<Head>
+					<meta charset='UTF-8' />
+					<title>PlayGratis | Free-to-Play Games</title>
+					<meta
+						name='viewport'
+						content='initial-scale=1.0, width=device-width'
+					/>
+					<meta
+						name='description'
+						content='PlayGratis is the ultimate directory for finding free-to-play PC or Browser games.'
+					/>
+					<meta
+						name='keywords'
+						content='PlayGratis, free-to-play, free to play, videogames, games'
+					/>
+					<meta name='author' content='AJ-Romera' />
+				</Head>
 				<div className='flex flex-row flex-1 items-center justify-center mx-auto max-w-5xl min-h-screen text-center'>
 					<div className='flex flex-col sm:grid sm:grid-cols-2 sm:gap-4 sm:items-center'>
 						<section className='text-gray-600 body-font'>
