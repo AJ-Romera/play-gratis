@@ -12,7 +12,7 @@ function Screenshots({ game }) {
 			let cleanUrl2 = cleanUrl1.replaceAll('%2F', '/');
 			let cleanUrl3 = cleanUrl2.replaceAll('%3A', ':');
 			let cleanUrl4 = cleanUrl3.replace(
-				'http://localhost:3000/_next/image?url=',
+				'https://play-gratis.vercel.app/_next/image?url=',
 				''
 			);
 			setImageSrc(cleanUrl4);
