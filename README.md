@@ -1,23 +1,47 @@
-# Next.js + Tailwind CSS Example
+# Play
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2.1) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+_PlayGratis is the ultimate directory for finding free-to-play PC or Browser games. Made with NextJs & Tailwind_
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## Content Index
 
-## Deploy your own
+-   [Demo](#demo-)
+-   [Made with](#made-with-%EF%B8%8F)
+-   [How to use](#How-to-use-)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Demo 🚀
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+https://play-gratis.vercel.app/
 
-## How to use
+## Made with 🛠️
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+-   [Next](https://nextjs.org/docs)
+-   Tailwind
+-   Hooks (useState, useEffect...)
+-   Static and dinamic Routing
+-   Conditional Components
+-   Search that filters your query
+-   Custom pagination
+-   JavaScript ES6+
+-   Deploy to Vercel
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+### How to use 🔧
+
+_Clone or fork this repo. Open the project and in your console write the following command:_
+
+```
+npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+_It will install the project dependencies for you, then use the command:_
+
+```
+npm run dev
+# or
+yarn dev
+```
+
+_It will start the project in developer mode in your browser, then open this URL:_
+
+[http://localhost:8000](http://localhost:8000)
+
+_You will see your project running and watch the code changes quickly_
