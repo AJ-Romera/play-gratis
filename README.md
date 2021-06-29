@@ -1,4 +1,4 @@
-# Play
+# PlayGratis
 
 _PlayGratis is the ultimate directory for finding free-to-play PC or Browser games. Made with NextJs & Tailwind_
 
