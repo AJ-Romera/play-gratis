@@ -16,6 +16,7 @@ https://play-gratis.vercel.app/
 
 -   [Next](https://nextjs.org/docs)
 -   Tailwind
+-   [FreeToGame API](https://www.freetogame.com/api-doc)
 -   Hooks (useState, useEffect...)
 -   Static and dinamic Routing
 -   Conditional Components
